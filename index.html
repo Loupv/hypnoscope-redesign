@@ -8,20 +8,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="nav">
   <a class="brand" href="#top">
-    <span class="brand__mark">H</span>
+    <img class="brand__mark" src="img/LOGO_nav.png" alt="Hypnoscope">
     <span class="brand__wordmark">Hypnoscope</span>
   </a>
   <nav class="nav__links">
-    <a href="#manifeste">Manifeste</a>
-    <a href="#tisseuse">La Tisseuse</a>
-    <a href="#automate">Le Rêve</a>
-    <a href="#collectif">Collectif</a>
+    <a href="#manifeste">À propos</a>
+    <a href="#tisseuse">La Tisseuse d'Histoires</a>
+    <a href="#automate">Le Rêve de l'Automate</a>
+    <a href="#naufrage">Le Naufragé des Abysses</a>
+    <a href="#collectif">Le collectif</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -32,18 +34,10 @@
 <section class="hero">
   <div class="hero__grain" aria-hidden="true"></div>
   <div class="hero__inner">
-    <p class="eyebrow">Art &middot; Sciences &middot; Recherche</p>
     <h1 class="hero__title">
-      <span class="hero__line">Des récits</span>
-      <span class="hero__line hero__line--italic">qui se tissent,</span>
-      <span class="hero__line">des rêves</span>
-      <span class="hero__line hero__line--italic">qui s'échappent.</span>
+      <span class="hero__line">Hypnoscope</span>
     </h1>
-    <p class="hero__lede">Un collectif d'artistes-chercheurs qui mêle spectacle vivant, technologies interactives et recherche-création pour faire émerger de nouvelles formes de narration.</p>
-    <div class="hero__cta">
-      <a href="#tisseuse" class="btn btn--primary">Découvrir les œuvres</a>
-      <a href="#manifeste" class="btn btn--ghost">À propos du collectif</a>
-    </div>
+    <p class="hero__sub">Art &middot; Sciences &middot; Recherche</p>
   </div>
   <div class="hero__scroll" aria-hidden="true">
     <span>scroll</span>
@@ -169,10 +163,60 @@
   </div>
 </section>
 
+<!-- NAUFRAGÉ -->
+<section id="naufrage" class="project">
+  <div class="project__marker">
+    <span class="section__num">04</span>
+    <span class="project__kind">Performance immersive bricolée</span>
+  </div>
+  <div class="project__header">
+    <h2 class="project__title">La folle épopée du<br><em>Naufragé des Abysses</em></h2>
+  </div>
+
+  <div class="gallery gallery--naufrage">
+    <figure><img loading="lazy" src="img/naufrage_cover.jpg" alt="Univers virtuel du Naufragé des Abysses"></figure>
+    <figure><img loading="lazy" src="img/naufrage_perf2.jpg" alt="Dispositif scénique avec capture de mouvement"></figure>
+    <figure><img loading="lazy" src="img/naufrage_plateau.jpg" alt="Tournage en temps réel sur le plateau"></figure>
+  </div>
+
+  <div class="project__body">
+    <div class="project__text">
+      <p class="prose__lead">Un tournage de film d'animation en temps réel, où le public fabrique les images sous les yeux de tous.</p>
+      <p>Au centre du dispositif, un·e participant·e incarne le personnage principal, Nemo, équipé·e d'un casque de réalité virtuelle. Par ses mouvements, il ou elle donne corps au héros et évolue dans l'univers des abysses. Autour, d'autres spectateur·rices manipulent des capteurs bricolés — fixés à des cannes à pêche ou des accessoires divers — pour faire apparaître créatures, décors et personnages secondaires.</p>
+      <p>Toutes les interactions sont captées, traitées et projetées en direct sur un écran de cinéma. L'enjeu n'est pas de produire une illusion parfaite, mais au contraire de laisser apparaître les coutures du dispositif. L'humour, souvent loufoque, naît de ces écarts entre la promesse technologique et sa mise en œuvre bricolée.</p>
+      <p class="prose__pull">Ce spectacle propose un espace à la fois ludique, critique et poétique, où l'on fabrique ensemble des images tout en prenant conscience de ce qui les rend possibles.</p>
+    </div>
+
+    <aside class="project__meta">
+      <div class="meta-block">
+        <h3>Crédits</h3>
+        <ul>
+          <li><strong>Axel Belin &amp; Rémi Sagot-Duvauroux</strong><br><span>Création &amp; développement</span></li>
+          <li><strong>Guillaume Seyller &amp; Axel Belin</strong><br><span>Character design</span></li>
+          <li><strong>Romain Blanc-Tailleur</strong><br><span>Musique</span></li>
+        </ul>
+      </div>
+      <div class="meta-block">
+        <h3>Présentation</h3>
+        <ul class="dates">
+          <li><time>2026</time> New Images Festival</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <div class="gallery gallery--naufrage-env">
+    <figure><img loading="lazy" src="img/naufrage_env1.jpg" alt="Baleine dans les abysses"></figure>
+    <figure><img loading="lazy" src="img/naufrage_env2.jpg" alt="Environnement sous-marin"></figure>
+    <figure><img loading="lazy" src="img/naufrage_env3.jpg" alt="Personnage coloré"></figure>
+    <figure><img loading="lazy" src="img/naufrage_env4.jpg" alt="Décor virtuel"></figure>
+  </div>
+</section>
+
 <!-- COLLECTIF / MEMBRES -->
 <section id="collectif" class="section">
   <div class="section__head">
-    <span class="section__num">04</span>
+    <span class="section__num">05</span>
     <h2 class="section__title">Les membres</h2>
   </div>
 
@@ -216,18 +260,22 @@
 
     <div class="contact__grid">
       <a class="contact__card" href="mailto:contact@hypnoscope.fr">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
         <span class="contact__label">Email</span>
         <span class="contact__value">contact@hypnoscope.fr</span>
       </a>
       <a class="contact__card" href="tel:+33631354692">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         <span class="contact__label">Téléphone</span>
         <span class="contact__value">+33 6 31 35 46 92</span>
       </a>
       <a class="contact__card" href="https://www.instagram.com/hypno.scope/" target="_blank" rel="noopener">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
         <span class="contact__label">Instagram</span>
         <span class="contact__value">@hypno.scope</span>
       </a>
       <a class="contact__card" href="https://www.linkedin.com/company/hypnoscope/" target="_blank" rel="noopener">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5a2 2 0 014 0v5"/></svg>
         <span class="contact__label">LinkedIn</span>
         <span class="contact__value">Hypnoscope</span>
       </a>
@@ -240,7 +288,17 @@
 <footer class="footer">
   <div class="footer__inner">
     <p>© <span id="year"></span> Hypnoscope — Collectif d'artistes-chercheurs</p>
-    <p class="footer__tagline">Art &middot; Sciences &middot; Recherche</p>
+    <div class="footer__links">
+      <a href="mailto:contact@hypnoscope.fr" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+      </a>
+      <a href="https://www.instagram.com/hypno.scope/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/company/hypnoscope/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5a2 2 0 014 0v5"/></svg>
+      </a>
+    </div>
   </div>
 </footer>
 
