@@ -1,3 +1,24 @@
+// Hamburger menu
+const burger = document.querySelector(".nav__burger");
+const navLinks = document.querySelector(".nav__links");
+
+burger.addEventListener("click", () => {
+  const open = burger.classList.toggle("is-open");
+  navLinks.classList.toggle("is-open", open);
+  burger.setAttribute("aria-expanded", open);
+  document.body.style.overflow = open ? "hidden" : "";
+});
+
+// Close menu on link click
+document.querySelectorAll(".nav__links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    burger.classList.remove("is-open");
+    navLinks.classList.remove("is-open");
+    burger.setAttribute("aria-expanded", false);
+    document.body.style.overflow = "";
+  });
+});
+
 // Year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -23,14 +44,14 @@ revealables.forEach((el) => io.observe(el));
 
 // Smooth nav highlight on scroll
 const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav__links a");
+const navLinkItems = document.querySelectorAll(".nav__links a");
 
 const navIO = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute("id");
-        navLinks.forEach((l) => {
+        navLinkItems.forEach((l) => {
           l.style.color = l.getAttribute("href") === "#" + id ? "var(--fg)" : "";
         });
       }
