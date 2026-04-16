@@ -234,15 +234,7 @@ main {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-}
-
-@media (max-width: 720px) {
-  .hero__bg {
-    position: absolute;
-  }
-  .hero__grain {
-    position: absolute;
-  }
+  will-change: transform;
 }
 
 .hero__bg img {
