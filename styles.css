@@ -236,6 +236,15 @@ main {
   z-index: 0;
 }
 
+@media (max-width: 720px) {
+  .hero__bg {
+    position: absolute;
+  }
+  .hero__grain {
+    position: absolute;
+  }
+}
+
 .hero__bg img {
   width: 100%;
   height: 100%;
