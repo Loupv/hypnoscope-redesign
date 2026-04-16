@@ -209,8 +209,9 @@ main {
 
   .nav__links a {
     color: #e4ebe0 !important;
-    font-size: 1.15rem !important;
-    white-space: nowrap !important;
+    font-size: 1rem !important;
+    white-space: normal !important;
+    line-height: 1.3 !important;
   }
   .nav__links a:hover { color: var(--accent-soft) !important; }
   .nav__links a::after { display: none !important; }
