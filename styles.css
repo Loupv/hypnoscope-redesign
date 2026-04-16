@@ -27,7 +27,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 0px;
 }
 
 body {
@@ -59,6 +59,19 @@ em { font-style: italic; }
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem clamp(1.25rem, 3vw, 2.5rem);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background 0.35s ease, backdrop-filter 0.35s ease, border-color 0.35s ease;
+}
+
+.nav.is-hidden {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.nav.is-scrolled {
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
   background: rgba(13, 18, 16, 0.82);
@@ -86,6 +99,14 @@ em { font-style: italic; }
 .brand__wordmark {
   font-size: 1.15rem;
   letter-spacing: 0.01em;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav.is-scrolled .brand__wordmark {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .nav__links {
@@ -180,8 +201,8 @@ em { font-style: italic; }
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding: 8rem clamp(1.5rem, 5vw, 4rem) 5rem;
+  align-items: flex-start;
+  padding: 10rem clamp(1.5rem, 5vw, 4rem) 5rem 0;
   overflow: hidden;
   background: var(--bg);
 }
@@ -815,13 +836,29 @@ em { font-style: italic; }
   margin: 0 auto;
 }
 
+.contact__title-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact__logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
 .contact__title {
   font-family: var(--serif);
   font-weight: 300;
   font-size: clamp(2.2rem, 5.5vw, 4.5rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
-  margin-bottom: 2rem;
   color: var(--fg);
 }
 
@@ -1014,6 +1051,10 @@ em { font-style: italic; }
 }
 
 @media (max-width: 480px) {
+  .hero {
+    align-items: flex-start;
+    padding-top: 6rem;
+  }
   .project__title {
     font-size: clamp(2rem, 10vw, 2.8rem);
     line-height: 1.05;

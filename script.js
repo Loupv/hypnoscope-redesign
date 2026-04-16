@@ -1,3 +1,25 @@
+// Nav: transparent on hero, solid + wordmark on scroll, hidden in contact
+const nav = document.querySelector(".nav");
+const contactSection = document.querySelector(".contact");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 80) {
+    nav.classList.add("is-scrolled");
+  } else {
+    nav.classList.remove("is-scrolled");
+  }
+}, { passive: true });
+
+const contactIO = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      nav.classList.toggle("is-hidden", entry.isIntersecting);
+    });
+  },
+  { threshold: 0.5 }
+);
+contactIO.observe(contactSection);
+
 // Hamburger menu
 const burger = document.querySelector(".nav__burger");
 const navLinks = document.querySelector(".nav__links");
