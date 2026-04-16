@@ -32,6 +32,7 @@ html {
 
 body {
   background: var(--bg);
+  background-color: var(--bg);
   color: var(--fg);
   font-family: var(--sans);
   font-size: 17px;
@@ -148,7 +149,7 @@ em { font-style: italic; }
   border: none;
   cursor: pointer;
   padding: 4px;
-  z-index: 51;
+  z-index: 201;
 }
 
 .nav__burger span {
@@ -168,30 +169,38 @@ em { font-style: italic; }
   .nav__burger { display: flex; }
 
   .nav__links {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: min(80vw, 320px);
-    background: var(--bg-alt);
-    border-left: 1px solid var(--line);
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    padding: 4rem 2.5rem;
-    font-size: 1.1rem;
-    transform: translateX(100%);
-    transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
-    z-index: 50;
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+    width: 75vw !important;
+    max-width: 300px !important;
+    height: 100vh !important;
+    background-color: #0d1210 !important;
+    border-left: 1px solid rgba(228, 235, 224, 0.12) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 2rem !important;
+    padding: 4rem 2.5rem !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1) !important;
+    z-index: 200 !important;
   }
 
   .nav__links.is-open {
-    transform: translateX(0);
+    transform: translateX(0) !important;
   }
 
-  .nav__links a { color: var(--fg-dim); }
-  .nav__links a:hover { color: var(--fg); }
-  .nav__links a::after { display: none; }
+  .nav__links a {
+    color: #e4ebe0 !important;
+    font-size: 1.15rem !important;
+    white-space: nowrap !important;
+  }
+  .nav__links a:hover { color: var(--accent-soft) !important; }
+  .nav__links a::after { display: none !important; }
 }
 
 /* ============================================
@@ -208,9 +217,10 @@ em { font-style: italic; }
 }
 
 .hero__bg {
-  position: absolute;
+  position: fixed;
   inset: 0;
   pointer-events: none;
+  z-index: 0;
 }
 
 .hero__bg img {
@@ -223,8 +233,9 @@ em { font-style: italic; }
 }
 
 .hero__grain {
-  position: absolute;
+  position: fixed;
   inset: 0;
+  z-index: 0;
   pointer-events: none;
   opacity: 0.35;
   mix-blend-mode: overlay;
@@ -233,6 +244,7 @@ em { font-style: italic; }
 
 .hero__inner {
   position: relative;
+  z-index: 1;
   max-width: var(--container);
   margin: 0 auto;
   width: 100%;
@@ -334,6 +346,7 @@ em { font-style: italic; }
 
 .hero__scroll {
   position: absolute;
+  z-index: 1;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
@@ -360,6 +373,9 @@ em { font-style: italic; }
   max-width: var(--container);
   margin: 0 auto;
   padding: clamp(5rem, 10vw, 10rem) clamp(1.5rem, 5vw, 4rem);
+  position: relative;
+  z-index: 1;
+  background: var(--bg);
 }
 
 .section--narrow { max-width: 880px; }
@@ -438,13 +454,15 @@ em { font-style: italic; }
    ============================================ */
 .project {
   position: relative;
+  z-index: 1;
   padding: clamp(5rem, 10vw, 10rem) clamp(1.5rem, 5vw, 4rem);
   max-width: var(--container);
   margin: 0 auto;
+  background: var(--bg);
 }
 
 .project--alt {
-  background: var(--bg-alt);
+  background: var(--bg-alt) !important;
   max-width: none;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -824,6 +842,8 @@ em { font-style: italic; }
    CONTACT
    ============================================ */
 .contact {
+  position: relative;
+  z-index: 1;
   background:
     radial-gradient(ellipse at 70% 20%, rgba(184, 90, 64, 0.08), transparent 55%),
     var(--bg-alt);
@@ -921,6 +941,8 @@ em { font-style: italic; }
    FOOTER
    ============================================ */
 .footer {
+  position: relative;
+  z-index: 1;
   padding: 2.5rem clamp(1.5rem, 5vw, 4rem);
   border-top: 1px solid var(--line);
   background: var(--bg-alt);
@@ -1040,9 +1062,26 @@ em { font-style: italic; }
    REVEAL ANIMATION
    ============================================ */
 .reveal {
+  transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Only fade inner elements, not the section backgrounds */
+.section.reveal, .project.reveal, .contact.reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.section.reveal > *, .project.reveal > *, .contact.reveal > * {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.section.is-visible > *, .project.is-visible > *, .contact.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .reveal.is-visible {
@@ -1052,8 +1091,14 @@ em { font-style: italic; }
 
 @media (max-width: 480px) {
   .hero {
-    align-items: flex-start;
-    padding-top: 6rem;
+    align-items: center;
+    padding-top: 0;
+  }
+  .hero__inner {
+    text-align: center;
+  }
+  .hero__sub {
+    display: none;
   }
   .project__title {
     font-size: clamp(2rem, 10vw, 2.8rem);

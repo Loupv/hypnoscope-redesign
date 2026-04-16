@@ -41,6 +41,18 @@ document.querySelectorAll(".nav__links a").forEach((link) => {
   });
 });
 
+// Close menu on click outside
+document.addEventListener("click", (e) => {
+  if (navLinks.classList.contains("is-open") &&
+      !navLinks.contains(e.target) &&
+      !burger.contains(e.target)) {
+    burger.classList.remove("is-open");
+    navLinks.classList.remove("is-open");
+    burger.setAttribute("aria-expanded", false);
+    document.body.style.overflow = "";
+  }
+});
+
 // Year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
