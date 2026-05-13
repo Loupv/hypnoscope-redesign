@@ -796,7 +796,7 @@ main {
    ============================================ */
 .members {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: clamp(2rem, 4vw, 3rem);
 }
 
@@ -811,21 +811,6 @@ main {
 .member {
   display: flex;
   flex-direction: column;
-}
-
-.member__portrait {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 8px;
-  background: var(--bg-elev);
-  margin-bottom: 1.5rem;
-  filter: grayscale(0.1) saturate(0.95);
-  transition: filter 0.5s ease;
-}
-
-.member:hover .member__portrait {
-  filter: grayscale(0) saturate(1.05);
 }
 
 .member h3 {
