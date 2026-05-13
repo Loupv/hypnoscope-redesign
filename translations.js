@@ -58,7 +58,7 @@ window.HYPNO_TRANSLATIONS = {
     "member.loup.bio": "Spécialisé dans la conception d'interfaces numériques et la réalisation d'expériences interactives et immersives. Après une thèse à l'EnsadLab sur le mouvement intuitif et improvisé en immersion, il travaille aujourd'hui au LNCO de Genève, un laboratoire de neurosciences, où il étudie les mécanismes de la conscience grâce à la méditation et à la réalité virtuelle.",
 
     "member.remi.role": "Monteur, designer d'expérience VR &amp; chercheur",
-    "member.remi.bio": "A travaillé sur des longs-métrages d'animation et documentaires (<em>La Tortue Rouge</em>, <em>Les Damnés de la Commune</em>). Doctorant dans le groupe Spatial Media de l'EnsadLab (ENSAD Paris, programme SACRe de PSL). Sa recherche explore le montage comme vecteur narratif dans les expériences immersives. Enseigne la VR à l'ENSAD, l'ENSTA Paris et la Sorbonne Nouvelle.",
+    "member.remi.bio": "Rémi a travaillé sur le montage de films tels que <em>La Tortue Rouge</em>, <em>Les Damnés de la Commune</em> ou <em>Le Parfum d'Irak</em>. Il est docteur en Design (SACRe - PSL) et post-doctorant à l'École des Arts Décoratifs de Paris. Portant sur les relations entre cinéma, théâtre et art numérique, sa pratique prend la forme d'installations, de design d'interfaces et de spectacles vivants.",
 
     "member.marie.role": "Chercheuse en management des arts &amp; productrice",
     "member.marie.bio": "Productrice du collectif. Doctorat de la Sorbonne Nouvelle, passage à la Bibliothèque Nationale de France comme chargée de recherche sur les médiations numériques. Enseignante-chercheuse à l'Université Dauphine – PSL, spécialisée en management et économie des arts et de la culture.",
@@ -150,7 +150,7 @@ window.HYPNO_TRANSLATIONS = {
     "member.loup.bio": "Specialised in the design of digital interfaces and the making of interactive and immersive experiences. After a PhD at EnsadLab on intuitive and improvised movement in immersion, he now works at the LNCO in Geneva, a neuroscience laboratory, where he studies the mechanisms of consciousness through meditation and virtual reality.",
 
     "member.remi.role": "Editor, VR experience designer &amp; researcher",
-    "member.remi.bio": "Has worked on animated features and documentaries (<em>La Tortue Rouge</em>, <em>Les Damnés de la Commune</em>). PhD candidate in the Spatial Media group at EnsadLab (ENSAD Paris, SACRe-PSL programme). His research explores editing as a narrative driver in immersive experiences. Teaches VR at ENSAD, ENSTA Paris and the Sorbonne Nouvelle.",
+    "member.remi.bio": "Rémi has worked on the editing of films such as <em>La Tortue Rouge</em>, <em>Les Damnés de la Commune</em> and <em>Le Parfum d'Irak</em>. He holds a PhD in Design (SACRe - PSL) and is a postdoctoral researcher at the École des Arts Décoratifs in Paris. Focusing on the interplay between cinema, theatre and digital art, his practice takes the form of installations, interface design and live performance.",
 
     "member.marie.role": "Arts management researcher &amp; producer",
     "member.marie.bio": "Producer of the collective. PhD from the Sorbonne Nouvelle, formerly at the Bibliothèque Nationale de France as a research officer on digital mediation. Lecturer-researcher at Université Dauphine – PSL, specialising in the management and economics of the arts and culture.",
