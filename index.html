@@ -19,17 +19,20 @@
     <span class="brand__wordmark">Hypnoscope</span>
   </a>
 
-  <button class="nav__burger" aria-label="Menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <nav class="nav__links">
-    <a href="#manifeste">À propos</a>
-    <a href="#tisseuse">La Tisseuse d'Histoires</a>
-    <a href="#automate">Le Rêve de l'Automate</a>
-    <a href="#naufrage">Le Naufragé des Abysses</a>
-    <a href="#collectif">Le collectif</a>
-    <a href="#footer-bottom">Contact</a>
-  </nav>
+  <div class="nav__right">
+    <nav class="nav__links">
+      <a href="#manifeste" data-i18n="nav.about">À propos</a>
+      <a href="#tisseuse" data-i18n="nav.tisseuse">La Tisseuse d'Histoires</a>
+      <a href="#automate" data-i18n="nav.automate">Le Rêve de l'Automate</a>
+      <a href="#naufrage" data-i18n="nav.naufrage">Le Naufragé des Abysses</a>
+      <a href="#collectif" data-i18n="nav.collectif">Le collectif</a>
+      <a href="#footer-bottom" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <button class="lang-toggle" aria-label="Switch language" type="button">EN</button>
+    <button class="nav__burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
 <main id="top">
@@ -44,10 +47,10 @@
     <h1 class="hero__title">
       <span class="hero__line">Hypnoscope</span>
     </h1>
-    <p class="hero__sub">Art &middot; Sciences &middot; Recherche</p>
+    <p class="hero__sub" data-i18n="hero.sub">Art &middot; Sciences &middot; Recherche</p>
   </div>
   <div class="hero__scroll" aria-hidden="true">
-    <span>scroll</span>
+    <span data-i18n="hero.scroll">scroll</span>
     <svg viewBox="0 0 12 24" width="12" height="24"><path d="M6 2v20M2 18l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
   </div>
 </section>
@@ -56,23 +59,23 @@
 <!-- MANIFESTE -->
 <section id="manifeste" class="section section--narrow">
   <div class="section__head">
-    <h2 class="section__title">Le collectif</h2>
+    <h2 class="section__title" data-i18n="manifeste.title">Le collectif</h2>
   </div>
   <div class="prose">
-    <p class="prose__lead">Fondé en 2022, le collectif Hypnoscope réunit des chercheur·ses et des artistes autour de projets de recherche-création à la croisée du spectacle vivant et des technologies immersives.</p>
-    <p>Le collectif conçoit des dispositifs participatifs et ludiques, où le public est invité à prendre part activement à la fabrication des récits à travers l'usage de la réalité virtuelle, de la captation de mouvement ou de l'intelligence artificielle.</p>
-    <p>Hypnoscope a créé trois spectacles — <em>La Tisseuse d'histoires</em>, <em>Le Rêve de l'Automate</em> et <em>La folle épopée du naufragé des abysses</em> — présentés dans de nombreux festivals et lieux, notamment la Biennale Chroniques à Marseille et le festival Recto VRso (2024 et 2025).</p>
-    <p class="prose__pull">Ses activités s'inscrivent également dans un dialogue étroit avec la recherche, en lien notamment avec l'École nationale supérieure des Arts Décoratifs et le laboratoire EnsadLab, explorant les formes émergentes de co-création entre humains et machines.</p>
+    <p class="prose__lead" data-i18n="manifeste.lead">Fondé en 2022, le collectif Hypnoscope réunit des chercheur·ses et des artistes autour de projets de recherche-création à la croisée du spectacle vivant et des technologies immersives.</p>
+    <p data-i18n="manifeste.p2">Le collectif conçoit des dispositifs participatifs et ludiques, où le public est invité à prendre part activement à la fabrication des récits à travers l'usage de la réalité virtuelle, de la captation de mouvement ou de l'intelligence artificielle.</p>
+    <p data-i18n="manifeste.p3">Hypnoscope a créé trois spectacles — <em>La Tisseuse d'histoires</em>, <em>Le Rêve de l'Automate</em> et <em>La folle épopée du naufragé des abysses</em> — présentés dans de nombreux festivals et lieux, notamment la Biennale Chroniques à Marseille et le festival Recto VRso (2024 et 2025).</p>
+    <p class="prose__pull" data-i18n="manifeste.p4">Ses activités s'inscrivent également dans un dialogue étroit avec la recherche, en lien notamment avec l'École nationale supérieure des Arts Décoratifs et le laboratoire EnsadLab, explorant les formes émergentes de co-création entre humains et machines.</p>
   </div>
 </section>
 
 <!-- TISSEUSE -->
 <section id="tisseuse" class="project">
   <div class="project__marker">
-    <span class="project__kind">Théâtre participatif d'objets numériques</span>
+    <span class="project__kind" data-i18n="tisseuse.kind">Théâtre participatif d'objets numériques</span>
   </div>
   <div class="project__header">
-    <h2 class="project__title">La Tisseuse<br><em>d'Histoires</em></h2>
+    <h2 class="project__title" data-i18n="tisseuse.title">La Tisseuse<br><em>d'Histoires</em></h2>
   </div>
 
   <div class="gallery gallery--tisseuse">
@@ -84,44 +87,44 @@
 
   <div class="project__body">
     <div class="project__text">
-      <p class="prose__lead">La Tisseuse d'Histoires fusionne spectacle vivant, performance participative et co-création cinématographique.</p>
-      <p>Accompagnée d'un musicien, une personne du public choisit la suite de l'histoire, une autre propose un décor au marionnettiste en réalité virtuelle, une troisième devient le narrateur. Ces trois volontaires créent une histoire unique en improvisation, pour le reste du public.</p>
-      <p>L'œuvre peut s'inscrire dans les récits des participants et dans les spécificités patrimoniales et architecturales du territoire d'accueil. À Drancy, les décors et les personnages ont reflété l'histoire cinématographique de la ville et son architecture — comme le Château de la Doucette.</p>
+      <p class="prose__lead" data-i18n="tisseuse.lead">La Tisseuse d'Histoires fusionne spectacle vivant, performance participative et co-création cinématographique.</p>
+      <p data-i18n="tisseuse.p2">Accompagnée d'un musicien, une personne du public choisit la suite de l'histoire, une autre propose un décor au marionnettiste en réalité virtuelle, une troisième devient le narrateur. Ces trois volontaires créent une histoire unique en improvisation, pour le reste du public.</p>
+      <p data-i18n="tisseuse.p3">L'œuvre peut s'inscrire dans les récits des participants et dans les spécificités patrimoniales et architecturales du territoire d'accueil. À Drancy, les décors et les personnages ont reflété l'histoire cinématographique de la ville et son architecture — comme le Château de la Doucette.</p>
 
       <figure class="quote quote--inline">
-        <blockquote>« Ça enrichit culturellement, ça ouvre le regard sur le virtuel… ça me rappelle quand j'étais gamin, avec les livres interactifs, c'était top&nbsp;! »</blockquote>
-        <figcaption>— Ameur, public de Drancy</figcaption>
+        <blockquote data-i18n="tisseuse.quote">« Ça enrichit culturellement, ça ouvre le regard sur le virtuel… ça me rappelle quand j'étais gamin, avec les livres interactifs, c'était top&nbsp;! »</blockquote>
+        <figcaption data-i18n="tisseuse.quoteBy">— Ameur, public de Drancy</figcaption>
       </figure>
     </div>
 
     <aside class="project__meta">
       <div class="meta-block">
-        <h3>Crédits</h3>
+        <h3 data-i18n="meta.credits">Crédits</h3>
         <ul>
-          <li><strong>Rémi Sagot-Duvauroux &amp; Loup Vuarnesson</strong><br><span>Conception &amp; développement</span></li>
-          <li><strong>Lia Mchedlishvili</strong><br><span>Direction artistique</span></li>
-          <li><strong>Accompagnement musical improvisé</strong><br><span>Matthieu Lecoq, Guilherme de Almeida, Satsuki Hoshino</span></li>
+          <li><strong>Rémi Sagot-Duvauroux &amp; Loup Vuarnesson</strong><br><span data-i18n="role.conception">Conception &amp; développement</span></li>
+          <li><strong>Lia Mchedlishvili</strong><br><span data-i18n="role.artDirection">Direction artistique</span></li>
+          <li><strong data-i18n="tisseuse.musicLabel">Accompagnement musical improvisé</strong><br><span>Matthieu Lecoq, Guilherme de Almeida, Satsuki Hoshino</span></li>
         </ul>
       </div>
       <div class="meta-block">
-        <h3>Dates</h3>
+        <h3 data-i18n="meta.dates">Dates</h3>
         <ul class="dates">
-          <li><time>déc. 2022</time> Création — Espace Culturel du Parc, Drancy</li>
-          <li><time>juin 2023</time> Université Sorbonne Nouvelle, Paris</li>
-          <li><time>avr. 2024</time> Festival Recto-VRso, Laval</li>
-          <li><time>mai 2024</time> Maison des Ensembles, Paris</li>
-          <li><time>janv. 2025</time> Biennale Chroniques, Théâtre Massalia, Marseille</li>
+          <li data-i18n="tisseuse.date1"><time>déc. 2022</time> Création — Espace Culturel du Parc, Drancy</li>
+          <li data-i18n="tisseuse.date2"><time>juin 2023</time> Université Sorbonne Nouvelle, Paris</li>
+          <li data-i18n="tisseuse.date3"><time>avr. 2024</time> Festival Recto-VRso, Laval</li>
+          <li data-i18n="tisseuse.date4"><time>mai 2024</time> Maison des Ensembles, Paris</li>
+          <li data-i18n="tisseuse.date5"><time>janv. 2025</time> Biennale Chroniques, Théâtre Massalia, Marseille</li>
         </ul>
       </div>
       <div class="meta-block meta-block--support">
-        <h3>Soutiens</h3>
+        <h3 data-i18n="meta.support">Soutiens</h3>
         <p>Ville de Drancy &middot; Passeurs d'Images</p>
       </div>
       <div class="meta-block">
-        <h3>Dossier</h3>
+        <h3 data-i18n="meta.dossier">Dossier</h3>
         <a class="meta-link" href="docs/La-tisseuse-dhistoires-24_.pdf" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
-          Dossier de production
+          <span data-i18n="meta.dossierLink">Dossier de production</span>
         </a>
       </div>
     </aside>
@@ -131,10 +134,10 @@
 <!-- AUTOMATE -->
 <section id="automate" class="project project--alt">
   <div class="project__marker">
-    <span class="project__kind">Dispositif immersif &amp; participatif</span>
+    <span class="project__kind" data-i18n="automate.kind">Dispositif immersif &amp; participatif</span>
   </div>
   <div class="project__header">
-    <h2 class="project__title">Le Rêve<br><em>de l'Automate</em></h2>
+    <h2 class="project__title" data-i18n="automate.title">Le Rêve<br><em>de l'Automate</em></h2>
   </div>
 
   <div class="project__video-row">
@@ -142,30 +145,30 @@
       <iframe src="https://player.vimeo.com/video/1073306501?dnt=1" title="Le Rêve de l'Automate — Work in Progress" allow="autoplay; fullscreen; picture-in-picture" frameborder="0"></iframe>
     </div>
     <div class="project__text">
-      <p class="prose__lead">Dans un monde où l'optimisation règne, nous proposons d'externaliser nos rêves grâce à l'IA.</p>
-      <p>En nourrissant une intelligence artificielle avide de créativité, les participant·es deviennent artisan·es d'un <em>« Rouleau-Rêve »</em> en perpétuel mouvement, où réel et virtuel s'entrelacent. Expérience immersive et participative, ce dispositif questionne les tensions entre la standardisation algorithmique et l'expression humaine.</p>
-      <p class="prose__pull">À qui appartient l'imaginaire quand même nos rêves deviennent exploitables&nbsp;?</p>
+      <p class="prose__lead" data-i18n="automate.lead">Dans un monde où l'optimisation règne, nous proposons d'externaliser nos rêves grâce à l'IA.</p>
+      <p data-i18n="automate.p2">En nourrissant une intelligence artificielle avide de créativité, les participant·es deviennent artisan·es d'un <em>« Rouleau-Rêve »</em> en perpétuel mouvement, où réel et virtuel s'entrelacent. Expérience immersive et participative, ce dispositif questionne les tensions entre la standardisation algorithmique et l'expression humaine.</p>
+      <p class="prose__pull" data-i18n="automate.pull">À qui appartient l'imaginaire quand même nos rêves deviennent exploitables&nbsp;?</p>
     </div>
   </div>
 
   <aside class="project__meta project__meta--full">
     <div class="meta-block">
-      <h3>Crédits</h3>
+      <h3 data-i18n="meta.credits">Crédits</h3>
       <ul>
-        <li><strong>Rémi Sagot-Duvauroux, Olivier Bienz, Loup Vuarnesson</strong><br><span>Conception &amp; développement</span></li>
-        <li><strong>Lia Mchedlishvili</strong><br><span>Direction artistique</span></li>
-        <li><strong>Paul Bazureau</strong><br><span>Accompagnement musical improvisé</span></li>
+        <li><strong>Rémi Sagot-Duvauroux, Olivier Bienz, Loup Vuarnesson</strong><br><span data-i18n="role.conception">Conception &amp; développement</span></li>
+        <li><strong>Lia Mchedlishvili</strong><br><span data-i18n="role.artDirection">Direction artistique</span></li>
+        <li><strong>Paul Bazureau</strong><br><span data-i18n="role.music">Accompagnement musical improvisé</span></li>
       </ul>
     </div>
     <div class="meta-block">
-      <h3>Présentation</h3>
+      <h3 data-i18n="meta.presentation">Présentation</h3>
       <ul class="dates">
-        <li><time>12–13 avr. 2025</time> Festival Recto-VRso, Laval</li>
+        <li data-i18n="automate.date1"><time>12–13 avr. 2025</time> Festival Recto-VRso, Laval</li>
       </ul>
     </div>
     <div class="meta-block meta-block--support">
-      <h3>Soutiens</h3>
-      <p>Résidence XR-CREATIVE à Angoulême financée par Magelis et le Cnam-Enjmin</p>
+      <h3 data-i18n="meta.support">Soutiens</h3>
+      <p data-i18n="automate.support">Résidence XR-CREATIVE à Angoulême financée par Magelis et le Cnam-Enjmin</p>
     </div>
   </aside>
 
@@ -180,10 +183,10 @@
 <!-- NAUFRAGÉ -->
 <section id="naufrage" class="project">
   <div class="project__marker">
-    <span class="project__kind">Performance immersive bricolée</span>
+    <span class="project__kind" data-i18n="naufrage.kind">Performance immersive bricolée</span>
   </div>
   <div class="project__header">
-    <h2 class="project__title">La folle épopée du<br><em>Naufragé des Abysses</em></h2>
+    <h2 class="project__title" data-i18n="naufrage.title">La folle épopée du<br><em>Naufragé des Abysses</em></h2>
   </div>
 
   <div class="gallery gallery--naufrage">
@@ -194,23 +197,23 @@
 
   <div class="project__body">
     <div class="project__text">
-      <p class="prose__lead">Un tournage de film d'animation en temps réel, où le public fabrique les images sous les yeux de tous.</p>
-      <p>Au centre du dispositif, un·e participant·e incarne le personnage principal, Nemo, équipé·e d'un casque de réalité virtuelle. Par ses mouvements, il ou elle donne corps au héros et évolue dans l'univers des abysses. Autour, d'autres spectateur·rices manipulent des capteurs bricolés — fixés à des cannes à pêche ou des accessoires divers — pour faire apparaître créatures, décors et personnages secondaires.</p>
-      <p>Toutes les interactions sont captées, traitées et projetées en direct sur un écran de cinéma. L'enjeu n'est pas de produire une illusion parfaite, mais au contraire de laisser apparaître les coutures du dispositif. L'humour, souvent loufoque, naît de ces écarts entre la promesse technologique et sa mise en œuvre bricolée.</p>
-      <p class="prose__pull">Ce spectacle propose un espace à la fois ludique, critique et poétique, où l'on fabrique ensemble des images tout en prenant conscience de ce qui les rend possibles.</p>
+      <p class="prose__lead" data-i18n="naufrage.lead">Un tournage de film d'animation en temps réel, où le public fabrique les images sous les yeux de tous.</p>
+      <p data-i18n="naufrage.p2">Au centre du dispositif, un·e participant·e incarne le personnage principal, Nemo, équipé·e d'un casque de réalité virtuelle. Par ses mouvements, il ou elle donne corps au héros et évolue dans l'univers des abysses. Autour, d'autres spectateur·rices manipulent des capteurs bricolés — fixés à des cannes à pêche ou des accessoires divers — pour faire apparaître créatures, décors et personnages secondaires.</p>
+      <p data-i18n="naufrage.p3">Toutes les interactions sont captées, traitées et projetées en direct sur un écran de cinéma. L'enjeu n'est pas de produire une illusion parfaite, mais au contraire de laisser apparaître les coutures du dispositif. L'humour, souvent loufoque, naît de ces écarts entre la promesse technologique et sa mise en œuvre bricolée.</p>
+      <p class="prose__pull" data-i18n="naufrage.pull">Ce spectacle propose un espace à la fois ludique, critique et poétique, où l'on fabrique ensemble des images tout en prenant conscience de ce qui les rend possibles.</p>
     </div>
 
     <aside class="project__meta">
       <div class="meta-block">
-        <h3>Crédits</h3>
+        <h3 data-i18n="meta.credits">Crédits</h3>
         <ul>
-          <li><strong>Axel Belin &amp; Rémi Sagot-Duvauroux</strong><br><span>Création &amp; développement</span></li>
-          <li><strong>Guillaume Seyller &amp; Axel Belin</strong><br><span>Character design</span></li>
-          <li><strong>Romain Blanc-Tailleur</strong><br><span>Musique</span></li>
+          <li><strong>Axel Belin &amp; Rémi Sagot-Duvauroux</strong><br><span data-i18n="role.creation">Création &amp; développement</span></li>
+          <li><strong>Guillaume Seyller &amp; Axel Belin</strong><br><span data-i18n="role.characterDesign">Character design</span></li>
+          <li><strong>Romain Blanc-Tailleur</strong><br><span data-i18n="role.musicShort">Musique</span></li>
         </ul>
       </div>
       <div class="meta-block">
-        <h3>Présentation</h3>
+        <h3 data-i18n="meta.presentation">Présentation</h3>
         <ul class="dates">
           <li><time>2026</time> New Images Festival</li>
         </ul>
@@ -229,44 +232,44 @@
 <!-- COLLECTIF / MEMBRES -->
 <section id="collectif" class="section">
   <div class="section__head">
-    <h2 class="section__title">Les membres</h2>
+    <h2 class="section__title" data-i18n="members.title">Les membres</h2>
   </div>
 
   <div class="members">
     <article class="member">
       <h3>Lia Mchedlishvili</h3>
-      <p class="member__role">Illustratrice &amp; décoratrice de cinéma d'animation</p>
-      <p class="member__bio">Études d'art à Kyiv puis cinéma d'animation en France. Travaille sur longs-métrages, séries et courts-métrages. A enseigné à Créapole. Décors pour <em>La Fameuse Invasion des Ours en Sicile</em>, <em>The Boy, the Mole, the Fox and the Horse</em>, <em>Anzu, chat-fantôme</em>, et <em>Saules Aveugles, Femme Endormie</em>.</p>
+      <p class="member__role" data-i18n="member.lia.role">Illustratrice &amp; décoratrice de cinéma d'animation</p>
+      <p class="member__bio" data-i18n="member.lia.bio">Études d'art à Kyiv puis cinéma d'animation en France. Travaille sur longs-métrages, séries et courts-métrages. A enseigné à Créapole. Décors pour <em>La Fameuse Invasion des Ours en Sicile</em>, <em>The Boy, the Mole, the Fox and the Horse</em>, <em>Anzu, chat-fantôme</em>, et <em>Saules Aveugles, Femme Endormie</em>.</p>
     </article>
 
     <article class="member">
       <h3>Loup Vuarnesson</h3>
-      <p class="member__role">Chercheur en design d'interaction, artiste &amp; développeur</p>
-      <p class="member__bio">Spécialisé dans la conception d'interfaces numériques et la réalisation d'expériences interactives et immersives. Après une thèse à l'EnsadLab sur le mouvement intuitif et improvisé en immersion, il travaille aujourd'hui au LNCO de Genève, un laboratoire de neurosciences, où il étudie les mécanismes de la conscience grâce à la méditation et à la réalité virtuelle.</p>
+      <p class="member__role" data-i18n="member.loup.role">Chercheur en design d'interaction, artiste &amp; développeur</p>
+      <p class="member__bio" data-i18n="member.loup.bio">Spécialisé dans la conception d'interfaces numériques et la réalisation d'expériences interactives et immersives. Après une thèse à l'EnsadLab sur le mouvement intuitif et improvisé en immersion, il travaille aujourd'hui au LNCO de Genève, un laboratoire de neurosciences, où il étudie les mécanismes de la conscience grâce à la méditation et à la réalité virtuelle.</p>
     </article>
 
     <article class="member">
       <h3>Rémi Sagot-Duvauroux</h3>
-      <p class="member__role">Monteur, designer d'expérience VR &amp; chercheur</p>
-      <p class="member__bio">A travaillé sur des longs-métrages d'animation et documentaires (<em>La Tortue Rouge</em>, <em>Les Damnés de la Commune</em>). Doctorant dans le groupe Spatial Media de l'EnsadLab (ENSAD Paris, programme SACRe de PSL). Sa recherche explore le montage comme vecteur narratif dans les expériences immersives. Enseigne la VR à l'ENSAD, l'ENSTA Paris et la Sorbonne Nouvelle.</p>
+      <p class="member__role" data-i18n="member.remi.role">Monteur, designer d'expérience VR &amp; chercheur</p>
+      <p class="member__bio" data-i18n="member.remi.bio">A travaillé sur des longs-métrages d'animation et documentaires (<em>La Tortue Rouge</em>, <em>Les Damnés de la Commune</em>). Doctorant dans le groupe Spatial Media de l'EnsadLab (ENSAD Paris, programme SACRe de PSL). Sa recherche explore le montage comme vecteur narratif dans les expériences immersives. Enseigne la VR à l'ENSAD, l'ENSTA Paris et la Sorbonne Nouvelle.</p>
     </article>
 
     <article class="member">
       <h3>Marie Ballarini</h3>
-      <p class="member__role">Chercheuse en management des arts &amp; productrice</p>
-      <p class="member__bio">Productrice du collectif. Doctorat de la Sorbonne Nouvelle, passage à la Bibliothèque Nationale de France comme chargée de recherche sur les médiations numériques. Enseignante-chercheuse à l'Université Dauphine – PSL, spécialisée en management et économie des arts et de la culture.</p>
+      <p class="member__role" data-i18n="member.marie.role">Chercheuse en management des arts &amp; productrice</p>
+      <p class="member__bio" data-i18n="member.marie.bio">Productrice du collectif. Doctorat de la Sorbonne Nouvelle, passage à la Bibliothèque Nationale de France comme chargée de recherche sur les médiations numériques. Enseignante-chercheuse à l'Université Dauphine – PSL, spécialisée en management et économie des arts et de la culture.</p>
     </article>
 
     <article class="member">
       <h3>Axel Belin</h3>
-      <p class="member__role">Comédien, metteur en scène, designer d'expérience VR &amp; chercheur</p>
-      <p class="member__bio">A travaillé comme comédien dans plusieurs spectacles (<em>Lefty&nbsp;!</em>, <em>La Bergère et le ramoneur</em>, <em>En attendant Godot</em>…) et mis en scène <em>Yaacobi et Leidental</em> et <em>La vie est un songe</em>. Doctorant au sein du groupe Spatial Media de l'EnsadLab (ENSAD Paris, programme SACRe-PSL), il explore la réalité virtuelle comme espace de répétition pour les acteurices.</p>
+      <p class="member__role" data-i18n="member.axel.role">Comédien, metteur en scène, designer d'expérience VR &amp; chercheur</p>
+      <p class="member__bio" data-i18n="member.axel.bio">A travaillé comme comédien dans plusieurs spectacles (<em>Lefty&nbsp;!</em>, <em>La Bergère et le ramoneur</em>, <em>En attendant Godot</em>…) et mis en scène <em>Yaacobi et Leidental</em> et <em>La vie est un songe</em>. Doctorant au sein du groupe Spatial Media de l'EnsadLab (ENSAD Paris, programme SACRe-PSL), il explore la réalité virtuelle comme espace de répétition pour les acteurices.</p>
     </article>
 
     <article class="member">
       <h3>Olivier Bienz</h3>
-      <p class="member__role">Artiste &amp; chercheur</p>
-      <p class="member__bio">Responsable du laboratoire d'artisanat numériques et co-dirige les cultures et pratiques numériques de l'École des Arts Décoratifs de Paris-PSL. Il entreprend également une thèse autour des pratiques numériques des artistes, de leurs enseignements et du rôle des institutions dans la prescription des outils numériques dans le champ de l'art et du design.</p>
+      <p class="member__role" data-i18n="member.olivier.role">Artiste &amp; chercheur</p>
+      <p class="member__bio" data-i18n="member.olivier.bio">Responsable du laboratoire d'artisanat numériques et co-dirige les cultures et pratiques numériques de l'École des Arts Décoratifs de Paris-PSL. Il entreprend également une thèse autour des pratiques numériques des artistes, de leurs enseignements et du rôle des institutions dans la prescription des outils numériques dans le champ de l'art et du design.</p>
     </article>
   </div>
 </section>
@@ -274,22 +277,22 @@
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="contact__inner">
-    <p class="eyebrow">Contact</p>
+    <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
     <div class="contact__title-row">
       <img class="contact__logo" src="img/LOGO_nav.png" alt="Hypnoscope">
-      <h2 class="contact__title">Parlons de votre lieu,<br>de votre territoire,<br>de vos publics.</h2>
+      <h2 class="contact__title" data-i18n="contact.title">Parlons de votre lieu,<br>de votre territoire,<br>de vos publics.</h2>
     </div>
-    <p class="contact__lede">Pour toute sollicitation — accueil d'une œuvre, atelier, résidence, collaboration de recherche — Marie Ballarini vous répondra.</p>
+    <p class="contact__lede" data-i18n="contact.lede">Pour toute sollicitation — accueil d'une œuvre, atelier, résidence, collaboration de recherche — Marie Ballarini vous répondra.</p>
 
     <div class="contact__grid">
       <a class="contact__card" href="mailto:contact@hypnoscope.fr">
         <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-        <span class="contact__label">Email</span>
+        <span class="contact__label" data-i18n="contact.email">Email</span>
         <span class="contact__value">contact@hypnoscope.fr</span>
       </a>
       <a class="contact__card" href="tel:+33631354692">
         <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        <span class="contact__label">Téléphone</span>
+        <span class="contact__label" data-i18n="contact.phone">Téléphone</span>
         <span class="contact__value">+33 6 31 35 46 92</span>
       </a>
       <a class="contact__card" href="https://www.instagram.com/hypno.scope/" target="_blank" rel="noopener">
@@ -311,7 +314,7 @@
 
 <footer id="footer-bottom" class="footer">
   <div class="footer__inner">
-    <p>© <span id="year"></span> Hypnoscope — Collectif d'artistes-chercheurs</p>
+    <p>© <span id="year"></span> <span data-i18n="footer.tagline">Hypnoscope — Collectif d'artistes-chercheurs</span></p>
     <div class="footer__links">
       <a href="mailto:contact@hypnoscope.fr" aria-label="Email">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
@@ -326,6 +329,7 @@
   </div>
 </footer>
 
+<script src="translations.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

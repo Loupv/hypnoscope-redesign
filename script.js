@@ -1,3 +1,50 @@
+// ============================================
+// i18n
+// ============================================
+(function () {
+  const translations = window.HYPNO_TRANSLATIONS || {};
+  const SUPPORTED = ["fr", "en"];
+  const STORAGE_KEY = "hypno-lang";
+
+  function getInitialLang() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved && SUPPORTED.includes(saved)) return saved;
+    return "fr";
+  }
+
+  function applyLang(lang) {
+    if (!SUPPORTED.includes(lang)) lang = "fr";
+    const dict = translations[lang] || {};
+    document.documentElement.lang = lang;
+
+    if (dict.__title) document.title = dict.__title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && dict.__description) metaDesc.setAttribute("content", dict.__description);
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+
+    const btn = document.querySelector(".lang-toggle");
+    if (btn) {
+      btn.textContent = lang === "fr" ? "EN" : "FR";
+      btn.setAttribute("aria-label", lang === "fr" ? "Switch to English" : "Passer en français");
+    }
+  }
+
+  applyLang(getInitialLang());
+
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".lang-toggle");
+    if (!btn) return;
+    const current = document.documentElement.lang === "en" ? "en" : "fr";
+    const next = current === "fr" ? "en" : "fr";
+    localStorage.setItem(STORAGE_KEY, next);
+    applyLang(next);
+  });
+})();
+
 // Nav: transparent on hero, solid + wordmark on scroll, hidden in contact
 const nav = document.querySelector(".nav");
 const contactSection = document.querySelector(".contact");
