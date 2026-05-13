@@ -858,9 +858,24 @@ main {
   padding-bottom: 2px;
 }
 
+.member__link::after {
+  content: "\2197"; /* ↗ */
+  display: inline-block;
+  margin-left: 0.3em;
+  font-size: 0.7em;
+  color: var(--accent-soft);
+  transform: translateY(-0.15em);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
 .member__link:hover {
   color: var(--accent-soft);
   background-size: 100% 1px;
+}
+
+.member__link:hover::after {
+  transform: translate(0.15em, -0.3em);
+  color: var(--accent);
 }
 
 .member h3 {
