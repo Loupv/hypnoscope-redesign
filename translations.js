@@ -50,6 +50,7 @@ window.HYPNO_TRANSLATIONS = {
     "naufrage.pull": "Ce spectacle propose un espace à la fois ludique, critique et poétique, où l'on fabrique ensemble des images tout en prenant conscience de ce qui les rend possibles.",
 
     "members.title": "Les membres",
+    "members.alumniTitle": "Ancienne membre &amp; cofondatrice",
 
     "member.lia.role": "Illustratrice &amp; décoratrice de cinéma d'animation",
     "member.lia.bio": "Études d'art à Kyiv puis cinéma d'animation en France. Travaille sur longs-métrages, séries et courts-métrages. A enseigné à Créapole. Décors pour <em>La Fameuse Invasion des Ours en Sicile</em>, <em>The Boy, the Mole, the Fox and the Horse</em>, <em>Anzu, chat-fantôme</em>, et <em>Saules Aveugles, Femme Endormie</em>.",
@@ -85,7 +86,7 @@ window.HYPNO_TRANSLATIONS = {
 
     "contact.eyebrow": "Contact",
     "contact.title": "Parlons de votre lieu,<br>de votre territoire,<br>de vos publics.",
-    "contact.lede": "Pour toute sollicitation — accueil d'une œuvre, atelier, résidence, collaboration de recherche — Marie Ballarini vous répondra.",
+    "contact.lede": "Pour toute sollicitation — accueil d'une œuvre, atelier, résidence, collaboration de recherche — le collectif vous répondra.",
     "contact.email": "Email",
     "contact.phone": "Téléphone",
 
@@ -142,6 +143,7 @@ window.HYPNO_TRANSLATIONS = {
     "naufrage.pull": "The show offers a space that is at once playful, critical and poetic, where we build images together while becoming aware of what makes them possible.",
 
     "members.title": "The members",
+    "members.alumniTitle": "Former member &amp; co-founder",
 
     "member.lia.role": "Illustrator &amp; animation film set designer",
     "member.lia.bio": "Art studies in Kyiv, then animation film in France. Works on feature films, series and shorts. Has taught at Créapole. Sets for <em>La Fameuse Invasion des Ours en Sicile</em>, <em>The Boy, the Mole, the Fox and the Horse</em>, <em>Anzu, chat-fantôme</em>, and <em>Saules Aveugles, Femme Endormie</em>.",
@@ -177,7 +179,7 @@ window.HYPNO_TRANSLATIONS = {
 
     "contact.eyebrow": "Contact",
     "contact.title": "Let's talk about your venue,<br>your territory,<br>your audiences.",
-    "contact.lede": "For any enquiry — hosting a work, workshop, residency, research collaboration — Marie Ballarini will get back to you.",
+    "contact.lede": "For any enquiry — hosting a work, workshop, residency, research collaboration — the collective will get back to you.",
     "contact.email": "Email",
     "contact.phone": "Phone",
 

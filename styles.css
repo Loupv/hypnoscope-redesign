@@ -843,6 +843,27 @@ main {
   .members { grid-template-columns: 1fr; }
 }
 
+.members-alumni {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--line);
+}
+
+.members-alumni__title {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.members--alumni {
+  grid-template-columns: 1fr;
+  max-width: 560px;
+}
+
 .member {
   display: flex;
   flex-direction: column;
